@@ -1,0 +1,9 @@
+.Trash
+
+Library/Accounts
+.DS_Store 
+Library/AppleMediaServices
+private
+**/.AppleDouble
+**/.LSOverride
+**/Library/Application Support/*
