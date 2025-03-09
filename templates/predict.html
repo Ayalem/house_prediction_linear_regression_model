@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body>
+<div class="container">
+    <h1>Predict House Price</h1>
+    <form class="form_prediction" method="POST">
+        <label>Lot Frontage: <input type="number" name="LotFrontage" required></label><br>
+        <label>Year Sold: <input type="number" name="YrSold" required></label><br>
+        <label>Lot Area: <input type="number" name="LotArea" required></label><br>
+        <label>Total Rooms Above Ground: <input type="number" name="TotRmsAbvGrd" required></label><br>
+        <label>Gr Liv Area: <input type="number" name="GrLivArea" required></label><br>
+        <label>Garage Cars: <input type="number" name="GarageCars" required></label><br>
+        <label>1st Floor SF: <input type="number" name="FlrSF" required></label><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Estimated House Price: ${{ prediction }}</h2>
+    {% elif error %}
+        <h2 style="color: pink;">{{ error }}</h2>
+    {% endif %}
+</div>
+
+</body>
+</html>

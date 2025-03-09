@@ -1,0 +1,5 @@
+numpy==1.26.4
+pandas==2.2.2
+sickit-learn==1.5.2
+Flask==2.2.5
+joblib==1.2.0
